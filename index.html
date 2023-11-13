@@ -12,7 +12,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 4rem;
+        gap: 3rem;
       "
     >
       <h1>HTML Toolbox</h1>
@@ -38,6 +38,71 @@
           <br />
           repudiandae hic sint cum est porro dolorum aliquam ea nostrum?
         </p>
+      </section>
+      <section>
+        <h2>Input</h2>
+        <p>
+          If you want to learn more, click
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+            target="_blank"
+            >here (MDN docs)</a
+          >
+        </p>
+        <form
+          id="input-form"
+          action=""
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <fieldset style="display: flex; align-items: center; gap: 1rem">
+            <legend>Range</legend>
+            <label for="range">Input: type=range</label>
+            <input id="range" type="range" />
+          </fieldset>
+          <fieldset style="display: flex; align-items: center; gap: 1rem">
+            <legend>Number</legend>
+            <label for="number">Input: type=number</label>
+            <input id="number" type="number" />
+          </fieldset>
+          <fieldset style="display: flex; align-items: center; gap: 1rem">
+            <legend>File</legend>
+            <label for="file">Input: type=file</label>
+            <input id="file" type="file" />
+          </fieldset>
+          <fieldset
+            style="
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              flex-direction: column;
+            "
+          >
+            <legend>Date and Time</legend>
+            <label for="date">Input: type=date</label>
+            <input id="date" type="date" />
+            <label for="time">Input: type=time</label>
+            <input id="time" type="time" />
+            <label for="datetime-local">Input: type=datetime-local</label>
+            <input id="datetime-local" type="datetime-local" />
+          </fieldset>
+          <fieldset style="display: flex; align-items: center; gap: 1rem">
+            <legend>Color</legend>
+            <label for="color">Input: type=color</label>
+            <input id="color" type="color" />
+          </fieldset>
+          <fieldset style="display: flex; align-items: center; gap: 1rem">
+            <legend>Radio</legend>
+            <label for="radio">Input: type=radio</label>
+            <input id="radio" type="radio" />
+          </fieldset>
+        </form>
+
+        <button form="input-form">Submit</button>
       </section>
       <section>
         <h2>Dialog</h2>
