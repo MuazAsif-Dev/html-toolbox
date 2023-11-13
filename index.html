@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Toolbox</title>
+  </head>
+  <body>
+    <main
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4rem;
+      "
+    >
+      <h1>HTML Toolbox</h1>
+      <section>
+        <h2>Line Break</h2>
+        <p>
+          If you want to learn more, click
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br"
+            target="_blank"
+            >here (MDN docs)</a
+          >
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <b> Line Break: </b>
+          <br />
+          Esse, ducimus voluptas error, exercitationem aspernatur
+          <b> Line Break: </b>
+          <br />
+          odio a asperiores beatae atque dolor
+          <b> Line Break: </b>
+          <br />
+          repudiandae hic sint cum est porro dolorum aliquam ea nostrum?
+        </p>
+      </section>
+      <section>
+        <h2>Dialog</h2>
+        <button onclick="window.dialogExample.show()">Show Dialog</button>
+        <button onclick="window.dialogExample.showModal()">
+          Show Dialog Modal
+        </button>
+        <dialog id="dialogExample">
+          <p>Native Dialog Box is Awesome!!!</p>
+          <p>
+            If you want to learn more, click
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"
+              target="_blank"
+              >here (MDN docs)</a
+            >
+            <a href="https://web.dev/learn/html/dialog" target="_blank"
+              >here (Web.dev)</a
+            >
+          </p>
+          <form method="dialog">
+            <button>OK</button>
+          </form>
+        </dialog>
+      </section>
+      <section>
+        <h2>Details and Summary</h2>
+        <details>
+          <summary>Click to learn more!</summary>
+          <p>
+            If you want to learn more, click
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"
+              target="_blank"
+              >here (MDN docs)</a
+            >
+            or
+            <a href="https://web.dev/learn/html/details" target="_blank"
+              >here (Web.dev)</a
+            >
+          </p>
+        </details>
+      </section>
+      <section>
+        <h2>Meter</h2>
+        <p>
+          If you want to learn more, click
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
+            target="_blank"
+            >here (MDN docs)</a
+          >
+        </p>
+        <meter
+          id="fuelLow"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="30"
+        >
+          at 30/100
+        </meter>
+        <meter
+          id="fuelMid"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="50"
+        >
+          at 50/100
+        </meter>
+        <meter
+          id="fuelHigh"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="70"
+        >
+          at 70/100
+        </meter>
+      </section>
+      <section>
+        <h2>Progress</h2>
+        <p>
+          If you want to learn more, click
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
+            target="_blank"
+            >here (MDN docs)</a
+          >
+        </p>
+        <label for="progressVal">With attributes</label>
+        <br />
+        <progress id="progressVal" value="70" max="100">70 %</progress>
+        <br />
+        <label for="progress">Without attributes</label>
+        <br />
+        <progress id="progress"></progress>
+      </section>
+      <section>
+        <h2>Optgroup</h2>
+        <p>
+          If you want to learn more, click
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup"
+            target="_blank"
+            >here (MDN docs)</a
+          >
+        </p>
+        <select name="beverages" id="beverages">
+          <optgroup label="Hot Drinks">
+            <option value="coffee">Coffee</option>
+            <option value="tea">Tea</option>
+          </optgroup>
+          <optgroup label="Cold Drinks">
+            <option value="soda">Soda</option>
+            <option value="iced-tea">Iced Tea</option>
+          </optgroup>
+          <optgroup label="Juices">
+            <option value="orange-juice">Orange Juice</option>
+            <option value="apple-juice">Apple Juice</option>
+          </optgroup>
+        </select>
+      </section>
+    </main>
+  </body>
+</html>
